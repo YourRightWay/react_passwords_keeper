@@ -28,6 +28,9 @@ export default class FormDialog extends React.Component {
         this.props.closeModal();
     };
     handleRequestSave = () => {
+        // const { ... } = this.state,
+        //       { ... } = this.props; // Так легче читается
+        
         if (this.state.passlabel && this.state.password) {
             if (this.state.mode === 'add') {
                 this.props.addPassword(this.state.passlabel, this.state.password);

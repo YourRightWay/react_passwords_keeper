@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserBox /> Snapshot <UserBox /> 1`] = `
+<div
+  className="test"
+>
+  <h2>
+    Vova Putin
+  </h2>
+  <img
+    alt=""
+    src="nttp://assets/img/path.jpg"
+  />
+  <p
+    className="kremlin@gmail.com"
+  >
+    kremlin@gmail.com
+  </p>
+</div>
+`;

@@ -1,9 +1,10 @@
 import * as types from '../constants';
 
-export const getPasswords = (response) => {
+export const getPasswords = () => {
     return {
         type: types.GET_PASSWORDS,
-        passwords: JSON.parse(response),
+        // passwords: JSON.parse(response),
+        passwords: JSON.parse(localStorage.passwords),
     }
 };
 
@@ -15,6 +16,7 @@ export const removePassword = (response) => {
 };
 
 export const addPassword = (name, password) => {
+    // Зачем обьект? Ведь можно сразу записать в состояние name password
     let addNew = {
         name: name,
         password: password,
